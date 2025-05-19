@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 
 // Animations
@@ -22,8 +22,7 @@ const fadeOut = keyframes`
   }
 `;
 
-// Styled components
-const WelcomeScreenContainer = styled.div`
+const WelcomeScreenContainer = styled.div<{ $isExiting: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +34,7 @@ const WelcomeScreenContainer = styled.div`
   align-items: center;
   z-index: 100;
   transition: opacity 1s ease-out;
-  opacity: ${(props) => (props.isExiting ? 0 : 1)};
+  opacity: ${(props) => (props.$isExiting ? 0 : 1)};
 `;
 
 const WelcomeText = styled.div`
@@ -74,7 +73,7 @@ const WelcomeScreen = () => {
   if (!isVisible) return null;
 
   return (
-    <WelcomeScreenContainer isExiting={isExiting}>
+    <WelcomeScreenContainer $isExiting={isExiting}>
       <WelcomeText>Welcome to my portfolio</WelcomeText>
     </WelcomeScreenContainer>
   );
