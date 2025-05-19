@@ -1,4 +1,6 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
+import Landing from "./sections/Landing";
+import WelcomeScreen from "./sections/WelcomeScreen";
 
 export default function App() {
   return (
@@ -7,10 +9,9 @@ export default function App() {
         <Route
           path="/"
           element={
-            <main className="bg-gray-50">
-              <h1 className="text-3xl font-bold text-center py-20">
-                Portfolio
-              </h1>
+            <main className="h-dvh">
+              <WelcomeScreen />
+              <Landing />
             </main>
           }
         />
