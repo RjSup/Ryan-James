@@ -1,6 +1,10 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./sections/NavBar";
+import Footer from "./sections/Footer";
 import Landing from "./sections/Landing";
-import WelcomeScreen from "./sections/WelcomeScreen";
+import About from "./sections/About";
+import Portfolio from "./sections/Portfolio";
+import Contact from "./sections/Contact";
 
 export default function App() {
   return (
@@ -9,9 +13,23 @@ export default function App() {
         <Route
           path="/"
           element={
-            <main className="h-dvh">
-              <WelcomeScreen />
-              <Landing />
+            <main >
+              {/* Navigation bar*/}
+                  <NavBar />
+              {/* Hero section */}
+                  <Landing />
+              
+                {/* About section */}
+                  <About />
+              
+                {/* Portfolio section */}
+                  <Portfolio />
+              
+                {/* Contact section */}
+                  <Contact />
+
+                {/* Footer */}
+                  <Footer />
             </main>
           }
         />
