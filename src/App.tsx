@@ -13,23 +13,21 @@ export default function App() {
         <Route
           path="/"
           element={
-            <main >
+            <main className="h-screen w-full bg-gradient-to-r from-[#CACCCC] via-[#DFE0DA] to-[#F0F0E4] flex flex-col">
               {/* Navigation bar*/}
-                  <NavBar />
-              {/* Hero section */}
+              <NavBar />
+                <div className="h-screen flex-1 overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+                  {/* Hero section */}
                   <Landing />
-              
-                {/* About section */}
+                  {/* About section */}
                   <About />
-              
-                {/* Portfolio section */}
+                  {/* Portfolio section */}
                   <Portfolio />
-              
-                {/* Contact section */}
+                  {/* Contact section */}
                   <Contact />
-
-                {/* Footer */}
-                  <Footer />
+                </div>
+              {/* Footer */}
+              <Footer />
             </main>
           }
         />
