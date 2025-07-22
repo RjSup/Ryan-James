@@ -9,12 +9,12 @@ export default function NavBar() {
   return (
     <nav className="w-full sticky top-0 z-5 bg-opacity-80">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold text-[#021963]"></div>
-        <ul className="flex space-x-6 text-[#021963] font-medium">
+        <div></div>
+        <ul className="flex space-x-6 text-black font-medium">
           <li>
             <button
               onClick={() => handleNavClick('landing')}
-              className="hover:text-[#73bbc5] transition-colors duration-200"
+              className="hover:text-[#021963] cursor-pointer transition-colors duration-200"
             >
               Home
             </button>
@@ -22,7 +22,7 @@ export default function NavBar() {
           <li>
             <button
               onClick={() => handleNavClick('about')}
-              className="hover:text-[#73bbc5] transition-colors duration-200"
+              className="hover:text-[#021963] cursor-pointer transition-colors duration-200"
             >
               About
             </button>
@@ -30,7 +30,7 @@ export default function NavBar() {
           <li>
             <button
               onClick={() => handleNavClick('portfolio')}
-              className="hover:text-[#73bbc5] transition-colors duration-200"
+              className="hover:text-[#021963] cursor-pointer transition-colors duration-200"
             >
               Portfolio
             </button>
@@ -38,7 +38,7 @@ export default function NavBar() {
           <li>
             <button
               onClick={() => handleNavClick('contact')}
-              className="hover:text-[#73bbc5] transition-colors duration-200"
+              className="hover:text-[#021963] cursor-pointer transition-colors duration-200"
             >
               Contact
             </button>
