@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://rjsup.github.io/Ryan_James",
+  "homepage": "https://rjsup.github.io/Ryan-James",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
