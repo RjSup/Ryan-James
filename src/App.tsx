@@ -1,4 +1,5 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
+import ColorStrip from "./sections/ColorStrip"
 import NavBar from "./sections/NavBar";
 import Footer from "./sections/Footer";
 import Landing from "./sections/Landing";
@@ -13,7 +14,8 @@ export default function App() {
         <Route
           path="/"
           element={
-            <main className="h-screen w-full bg-gradient-to-r from-[#CACCCC] via-[#DFE0DA] to-[#F0F0E4] flex flex-col">
+            <main className=" h-screen w-screen bg-gradient-to-r from-[#CACCCC] via-[#DFE0DA] to-[#F0F0E4] flex flex-col">
+              <ColorStrip />
               {/* Navigation bar*/}
               <NavBar />
                 <div className="h-screen flex-1 overflow-y-scroll snap-y snap-mandatory scroll-smooth">

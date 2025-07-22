@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <nav className="w-full sticky top-0 z-5 bg-opacity-80">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold text-[#021963]">Ryan James</div>
+        <div className="text-xl font-bold text-[#021963]"></div>
         <ul className="flex space-x-6 text-[#021963] font-medium">
           <li>
             <button

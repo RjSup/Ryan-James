@@ -1,7 +1,9 @@
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-gray-800">Footer</h1>
-    </div>
+    <footer className="w-full py-4 text-center text-gray-600 text-sm">
+      &copy; {year} Ryan James.
+    </footer>
   );
 }
