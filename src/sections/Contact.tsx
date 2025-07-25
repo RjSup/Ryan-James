@@ -55,7 +55,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full h-fit px-6 py-16 flex flex-col items-center justify-center scroll-mt-20 snap-start"
+      className="w-full h-full px-6 py-16 flex flex-col items-center justify-center scroll-mt-20 snap-start"
     >
       <div className="max-w-6xl w-full flex flex-col md:flex-row gap-12 items-start">
         {/* Left Side */}

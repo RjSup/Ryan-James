@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full h-screen flex flex-col items-center p-6 snap-start"
+      className="w-full h-fit flex flex-col items-center p-6 snap-start"
     >
       {/* Heading */}
       <div className="mb-6">
