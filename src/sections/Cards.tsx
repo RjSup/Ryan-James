@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import img from '../assets/pxArt.ico';
 
 type Project = {
