@@ -62,7 +62,7 @@ export default function Contact() {
         <div className="flex-1 flex flex-col self-start pt-2">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Whether you're a recruiter, fellow developer, or just curious about my work — feel free to connect with me!
+            Whether you're a recruiter, fellow developer, or just curious about my work, feel free to connect with me!
           </p>
 
           <div className="flex flex-col space-y-4 text-black text-lg">
@@ -119,7 +119,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full border border-black rounded-md px-4 py-2 bg-[#DFE0DA] focus:outline-none focus:ring-2 focus:ring-[#4169E1]"
+                className="mt-1 block w-full border border-black rounded-md px-4 py-2 bg-[#eddfe0] focus:outline-none focus:ring-2 focus:ring-[#4169E1]"
               />
             </div>
 
@@ -134,7 +134,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full border border-black rounded-md px-4 py-2 bg-[#DFE0DA] focus:outline-none focus:ring-2 focus:ring-[#4169E1]"
+                className="mt-1 block w-full border border-black rounded-md px-4 py-2 bg-[#eddfe0] focus:outline-none focus:ring-2 focus:ring-[#4169E1]"
               />
             </div>
 
@@ -149,7 +149,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full border border-black rounded-md px-4 py-2 bg-[#DFE0DA] focus:outline-none focus:ring-2 focus:ring-[#4169E1]"
+                className="mt-1 block w-full border border-black rounded-md px-4 py-2 bg-[#eddfe0] focus:outline-none focus:ring-2 focus:ring-[#4169E1]"
               />
             </div>
 

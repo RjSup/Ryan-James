@@ -14,7 +14,7 @@ export default function App() {
         <Route
           path="/"
           element={
-            <main className=" h-screen w-screen bg-gradient-to-r from-[#CACCCC] via-[#DFE0DA] to-[#F0F0E4] flex flex-col">
+            <main className=" h-screen w-screen bg-[#eddfe0] flex flex-col">
               <ColorStrip />
               {/* Navigation bar*/}
               <NavBar />
