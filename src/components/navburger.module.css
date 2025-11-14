@@ -1,0 +1,36 @@
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Hamburger lines */
+.burger div {
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate burger when open */
+.burger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Show burger on small screens */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+}

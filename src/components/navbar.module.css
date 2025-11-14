@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo styles */
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.title {
+  text-decoration: none;
+  color: black;
+}
+
+/* Nav links */
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Hide nav links on small screens */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+}

@@ -1,0 +1,40 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem; 
+  scroll-snap-align: start;
+  min-height: max-content; 
+  box-sizing: border-box;
+}
+
+.landing-title {
+  font-size: 1.875rem; 
+  font-weight: bold;
+  color: black;
+  padding-top: 6rem; 
+  padding-bottom: 23rem; 
+  letter-spacing: 0.1em; 
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.landing-subtitle {
+  font-size: 1.25rem;
+  color: black;
+  margin-top: 0.5rem; 
+  letter-spacing: 0.1em; 
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.landing-text {
+  font-size: 0.875rem;
+  color: black;
+  margin-top: 0.5rem; 
+  letter-spacing: 0.1em; 
+  text-transform: uppercase;
+  text-align: center;
+}
