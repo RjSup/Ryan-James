@@ -1,7 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Footer from "./pages/Footer";
 import Landing from "./pages/Landing";
-
+import styles from './app.module.css';
 
 export default function App() {
   return (
@@ -10,12 +10,11 @@ export default function App() {
         <Route
           path="/"
           element={
-            <main className=" h-screen w-screen bg-white flex flex-col">
-              {/* Navigation bar*/}
-                <div>
-                  {/* Hero section */}
-                  <Landing />
-                </div>
+            <main className={styles["app-container"]}>
+              {/* Hero section */}
+              <div className={styles["hero-section"]}>
+                <Landing />
+              </div>
               {/* Footer */}
               <Footer />
             </main>
