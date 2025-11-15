@@ -120,3 +120,30 @@
     color: #3178C6;
     font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column; 
+    height: auto;           
+    width: 100%;            
+    gap: 1.5rem;        
+  }
+
+  .right-section {
+    order: 1;               
+    align-items: center;    
+    width: 100%;
+  }
+
+
+  .left-section {
+    order: 2;               
+    align-items: center;
+    width: 100%;
+  }
+
+  .image-placeholder {
+    width: 90%;             
+    height: auto;      
+  }
+}

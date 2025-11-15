@@ -16,7 +16,6 @@ const Navbar = () => {
       {/* Desktop nav links */}
       <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
         <a className={`${styles.navLink}`} href="" onClick={() => setIsMenuOpen(false)}>Home</a>
-        <a className={`${styles.navLink}`} href="" onClick={() => setIsMenuOpen(false)}>About</a>
         <a className={`${styles.navLink}`} href="" onClick={() => setIsMenuOpen(false)}>Projects</a>
         <a className={`${styles.navLink}`} href="" onClick={() => setIsMenuOpen(false)}>Contact</a>
       </nav>
