@@ -1,15 +1,17 @@
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: relative;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  background-color: rgba(255, 255, 255, 1);
+  z-index: 1000;
 }
+
 
 .logo {
   font-weight: bold;
@@ -29,19 +31,22 @@
   padding: 0.25rem 0.5rem;
 }
 
-.nav a {
+.navLink {
   text-decoration: none;
   color: black;
   font-weight: 500;
   padding: 0.25rem 0.5rem;
-  border: 2px solid;
+  border: 2px solid black;
   border-radius: 4px;
+  background: none;
+  cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease, font-size 0.3s ease;
 }
 
-.nav a:hover {
+.navLink:hover {
   background-color: rgba(119, 158, 203, 1);
   border-color: black;
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -68,15 +73,21 @@
     opacity: 1;
   }
 
-  .nav a {
+  .navLink {
     font-size: 2rem; 
     padding: 1rem 2rem;
     color: white; 
     border: 1px solid white;
+    background: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   }
 
-  .nav a:hover {
+  .navLink:hover {
     background-color: rgba(119, 158, 203, 1);
     border-color: black;
+    color: black;
   }
 }
+

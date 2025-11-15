@@ -1,4 +1,3 @@
-import Navbar from "../components/NavBar";
 import styles from './landing.module.css';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Example from '../../public/example2.jpg'
@@ -6,7 +5,6 @@ import Example from '../../public/example2.jpg'
 export default function Landing() {
   return (
     <>
-      <Navbar />
       <div className={styles["landing-container"]}>
         <div className={styles["left-section"]}>
           <h1 className={styles["landing-title"]}>ryan james</h1>
