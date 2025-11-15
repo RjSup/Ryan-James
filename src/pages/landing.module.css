@@ -33,8 +33,15 @@
 .image-placeholder {
   width: 280px;
   height: 280px;
-  background: #e5e5e5;
+  background: white;
   border-radius: 12px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .landing-title {
@@ -67,15 +74,20 @@
   margin-top: 0.5rem;
 }
 
+
 .github-link {
   margin-top: 1rem;
   text-decoration: none;
   color: black;
   font-weight: 600;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   border: 2px solid black;
   border-radius: 6px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.github-icon {
+  font-size: 1.5rem;
 }
 
 .linkedin-link {
@@ -83,10 +95,14 @@
   text-decoration: none;
   color: black;
   font-weight: 600;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   border: 2px solid black;
   border-radius: 6px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.linkedin-icon {
+  font-size: 1.5rem;
 }
 
 .linkedin-link:hover, .github-link:hover {

@@ -15,14 +15,20 @@ export default function Landing() {
           </p>
 
           <div className={styles["social-links"]}>
-            <a className={styles["github-link"]} href="https://github.com/RjSup"><FaGithub /></a>
-            <a className={styles["linkedin-link"]} href="https://www.linkedin.com/in/rjsup"><FaLinkedin /></a>
+            <a className={styles["github-link"]} href="https://github.com/RjSup">
+              <i className={styles["github-icon"]}><FaGithub /></i>
+            </a>
+            <a className={styles["linkedin-link"]} href="https://www.linkedin.com/in/rjsup">
+              <i className={styles["linkedin-icon"]}><FaLinkedin /></i>
+            </a>
           </div>
         </div>
 
         <div className={styles["right-section"]}>
           {/* image */}
-          <div className={styles["image-placeholder"]} ></div>
+          <div className={styles["image-placeholder"]} >
+            <img alt="" className={styles["profile-image"]} />
+          </div>
         </div>
       </div>
     </>
