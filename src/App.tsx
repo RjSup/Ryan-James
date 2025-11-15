@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Footer from "./pages/Footer";
 import Landing from "./pages/Landing";
+import About from "./pages/About";
 import styles from './app.module.css';
 
 export default function App() {
@@ -11,12 +12,11 @@ export default function App() {
           path="/"
           element={
             <main className={styles["app-container"]}>
-              {/* Hero section */}
               <div className={styles["hero-section"]}>
                 <Landing />
+                <About />
+                <Footer />
               </div>
-              {/* Footer */}
-              <Footer />
             </main>
           }
         />

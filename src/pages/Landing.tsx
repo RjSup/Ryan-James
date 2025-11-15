@@ -1,6 +1,7 @@
 import Navbar from "../components/NavBar";
 import styles from './landing.module.css';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Example from '../../public/example2.jpg'
 
 export default function Landing() {
   return (
@@ -27,7 +28,7 @@ export default function Landing() {
         <div className={styles["right-section"]}>
           {/* image */}
           <div className={styles["image-placeholder"]} >
-            <img alt="" className={styles["profile-image"]} />
+            <img alt="" src={Example} className={styles["profile-image"]} />
           </div>
         </div>
       </div>
