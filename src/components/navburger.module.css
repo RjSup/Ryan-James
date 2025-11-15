@@ -7,7 +7,6 @@
   cursor: pointer;
 }
 
-/* Hamburger lines */
 .burger div {
   height: 3px;
   background-color: black;
@@ -15,7 +14,6 @@
   transition: all 0.3s ease;
 }
 
-/* Animate burger when open */
 .burger.open div:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -28,7 +26,6 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Show burger on small screens */
 @media (max-width: 768px) {
   .burger {
     display: flex;

@@ -10,15 +10,15 @@ const Navbar = () => {
     <header className={styles.header}>
       {/* Logo */}
       <div className={styles.logo}>
-        <a className={styles.title}>RyanJames</a>
+        <a className={styles.title}>RJ</a>
       </div>
 
       {/* Desktop nav links */}
       <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
-        <a href="#landing" onClick={() => setIsMenuOpen(false)}>Home</a>
-        <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
-        <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
-        <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+        <a className={`${styles.navLink}`} href="" onClick={() => setIsMenuOpen(false)}>Home</a>
+        <a className={`${styles.navLink}`} href="" onClick={() => setIsMenuOpen(false)}>About</a>
+        <a className={`${styles.navLink}`} href="" onClick={() => setIsMenuOpen(false)}>Projects</a>
+        <a className={`${styles.navLink}`} href="" onClick={() => setIsMenuOpen(false)}>Contact</a>
       </nav>
 
       {/* Burger menu (right side) */}

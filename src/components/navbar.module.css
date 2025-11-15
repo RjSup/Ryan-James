@@ -9,7 +9,6 @@
   margin: 0 auto;
 }
 
-/* Logo styles */
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
@@ -24,23 +23,57 @@
 .nav {
   display: flex;
   gap: 1.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
-/* Hide nav links on small screens */
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, font-size 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: rgba(119, 158, 203, 1);
+  border-color: black;
+}
+
 @media (max-width: 768px) {
   .nav {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    width: 200px;
-    border: 1px solid #ddd;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    gap: 2rem;
+    padding: 0;
+    z-index: 999; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
   .nav.open {
     display: flex;
+    opacity: 1;
+  }
+
+  .nav a {
+    font-size: 2rem; 
+    padding: 1rem 2rem;
+    color: white; 
+    border: 1px solid white;
+  }
+
+  .nav a:hover {
+    background-color: rgba(119, 158, 203, 1);
+    border-color: black;
   }
 }
