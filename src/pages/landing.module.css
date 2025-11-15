@@ -1,51 +1,128 @@
 .landing-container {
+  flex: 0.9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 10rem;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 73vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-section {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1.5rem;
-  scroll-snap-align: start;
-  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
-.landing-container {
+.right-section {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 1.5rem; 
-  scroll-snap-align: start;
-  min-height: max-content; 
-  box-sizing: border-box;
+}
+
+.image-placeholder {
+  width: 280px;
+  height: 280px;
+  background: #e5e5e5;
+  border-radius: 12px;
 }
 
 .landing-title {
-  font-size: 1.875rem; 
-  font-weight: bold;
+  font-size: 3.5rem;
+  font-weight: 800;
   color: black;
-  padding-top: 6rem; 
-  padding-bottom: 23rem; 
-  letter-spacing: 0.1em; 
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0;
-  text-align: center;
 }
 
 .landing-subtitle {
   font-size: 1.25rem;
   color: black;
-  margin-top: 0.5rem; 
-  letter-spacing: 0.1em; 
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  text-align: center;
+  font-weight: 600;
 }
 
 .landing-text {
   font-size: 0.875rem;
   color: black;
-  margin-top: 0.5rem; 
-  letter-spacing: 0.1em; 
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.github-link {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 2rem 2rem;
+  border: 2px solid black;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.linkedin-link {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 2rem 2rem;
+  border: 2px solid black;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.linkedin-link:hover, .github-link:hover {
+  background-color: rgba(119, 158, 203, 1);
+  border-color: black;
+}
+
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    gap: 1.5rem;
+    min-height: auto;
+  }
+
+  .left-section {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .image-placeholder {
+    display: none;
+  }
+
+  .landing-title {
+    font-size: 2rem;
+  }
+
+  .landing-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .landing-text {
+    font-size: 0.85rem;
+  }
 }
