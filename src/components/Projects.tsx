@@ -5,6 +5,8 @@ import styles from "./projects.module.css";
 export interface TechItem {
     icon: ReactNode;  
     name: string;  
+    colour?: string;
+    background?: string;
 }
 
 export interface ProjectProps {
@@ -58,7 +60,7 @@ export default function Project({
                 {/* TECH ICONS */}
                 <div className={styles["content-icons"]}>
                     {tech.map((item, index) => (
-                        <div key={index} className={styles["icon-item"]}>
+                        <div key={index} className={styles["icon-item"]} style={{color: item.colour, background: item.background}}>
                             {item.icon}
                             <span>{item.name}</span>
                         </div>

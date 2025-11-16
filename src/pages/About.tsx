@@ -16,10 +16,10 @@ export default function About() {
                 image={Ledgerly}
                 // repoLink="https://github.com/RjSup/expense-tracker"
                 liveLink="https://github.com/RjSup/expense-tracker"
-                description="Ledgerly is a personal expense where users can sign up and log in to securely manage their finances, adding or removing expenses as needed. The app allows users to set a monthly budget and provides real-time insights into how their spending affects their overall budget by calculating total expenses spent so far. It gives a clear overview of financial habits, helping users stay on track with their goals. This project was built using React and TypeScript, with a PostgreSQL database to store user information and expense data."
+                description="Ledgerly is a personal expense tracker where users can sign up and log in to securely manage their finances, adding or removing expenses as needed. The app allows users to set a monthly budget and provides real-time insights into how their spending affects their overall budget by calculating total expenses spent so far. It gives a clear overview of financial habits, helping users stay on track with their goals. This project was built using React and TypeScript, with a PostgreSQL database to store user information and expense data."
                 tech={[
-                    { icon: <FaReact />, name: "React" },
-                    { icon: <SiTypescript />, name: "TypeScript" },
+                    { icon: <FaReact />, name: "React", colour: "#58c3db", background: "#c5e9fc" },
+                    { icon: <SiTypescript />, name: "TypeScript", colour: "#3178C6", background: "#d2e1f7" },
                 ]}
                 />
 
@@ -30,9 +30,9 @@ export default function About() {
                 liveLink="https://github.com/RjSup/Final_Year_Project"
                 description="WealthWise is a stock predicting web application that leverages machine learning to help users make informed investment decisions. By analyzing historical stock data and market trends, WealthWise provides users with predictions on stock performance, enabling them to strategize their investments effectively. The platform features an intuitive interface where users can search for stocks, view detailed analytics, and receive personalized recommendations. Built with Svelte, JavaScript and Python, WealthWise ensures a seamless user experience while utilizing robust backend technologies to handle data processing and machine learning algorithms."
                 tech={[
-                    { icon: <SiSvelte />, name: "Svelte" },
-                    { icon: <SiJavascript />, name: "JavaScript" },
-                    { icon: <SiPython />, name: "Python" },
+                    { icon: <SiSvelte />, name: "Svelte", colour: "#FF3E00", background: "#ffd8cc" },
+                    { icon: <SiJavascript />, name: "JavaScript", colour: "#000000", background: "#F7DF1E" },
+                    { icon: <SiPython />, name: "Python", colour: "#3776AB", background: "#d6e8f6" },
                 ]}
                 />
 
@@ -43,9 +43,9 @@ export default function About() {
                 liveLink="https://github.com/RjSup/COMP5013-WebApp"
                 description="Conversely is a debating web application designed to facilitate structured debates on various topics. Users can create accounts, join debate rooms, and engage in discussions by presenting arguments and counterarguments. The platform supports real-time interactions, allowing participants to respond to each other's points promptly. Built using Flask for the backend and JavaScript for the frontend, Conversely ensures a smooth and interactive user experience while maintaining robust performance and security."
                 tech={[
-                    { icon: <SiJavascript />, name: "JavaScript" },
-                    { icon: <SiPython />, name: "Python" },
-                    { icon: <SiFlask />, name: "Flask" },
+                    { icon: <SiJavascript />, name: "JavaScript", colour: "#000000", background: "#F7DF1E" },
+                    { icon: <SiPython />, name: "Python", colour: "#3776AB", background: "#d6e8f6" },
+                    { icon: <SiFlask />, name: "Flask", colour: "#000000", background: "#e0e0e0" },
                 ]}
                 />
                 
