@@ -1,7 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Footer from "./pages/Footer";
 import Landing from "./pages/Landing";
-import About from "./pages/About";
+import About from "./pages/Projects";
 import styles from './app.module.css';
 import Navbar from "./components/NavBar";
 
