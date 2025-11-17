@@ -1,13 +1,13 @@
 import styles from './landing.module.css';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Example from '../../public/example2.jpg'
+import Example from '../assets/example2.png';
 
 export default function Landing() {
   return (
     <>
       <div className={styles["landing-container"]}>
         <div className={styles["left-section"]}>
-          <h1 className={styles["landing-title"]}>ryan james</h1>
+          <h1 className={styles["landing-title"]}>Ryan James</h1>
           <h2 className={styles["landing-subtitle"]}>Aspiring Software Developer.</h2>
           <p className={styles["landing-text"]}>
             Building intelligent, interactive, and impactful software.

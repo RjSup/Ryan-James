@@ -33,7 +33,7 @@ const Navbar = () => {
       </nav>
 
       {/* Burger menu (right side) */}
-      <NavBurger isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+      <NavBurger data-testid="nav-burger" isOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </header>
   );
 };
