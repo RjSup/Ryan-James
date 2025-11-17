@@ -3,6 +3,7 @@ import type { TechItem } from "../components/Projects";
 import Ledgerly from '../assets/example.png';
 import WealthWise from '../assets/example3.png';
 import Conversely from '../assets/example4.png';
+import CliGame from '../assets/cligame.png'
 import { FaReact } from "react-icons/fa";
 import { SiJavascript, SiPython, SiTypescript, SiSvelte, SiFlask } from "react-icons/si";
 import styles from './project.module.css';
@@ -48,6 +49,15 @@ const projects: ProjectData[] = [
             { icon: <SiJavascript />, name: "JavaScript", colour: "#000000", background: "#F7DF1E" },
             { icon: <SiPython />, name: "Python", colour: "#3776AB", background: "#d6e8f6" },
             { icon: <SiFlask />, name: "Flask", colour: "#000000", background: "#e0e0e0" },
+        ]
+    },
+    {
+        title: "CLI-Battler",
+        image: CliGame,
+        liveLink: "https://github.com/RjSup/RPG-CLI-battler-game",
+        description: "A TypeScript CLI auto-battler RPG with turn-based combat, procedural character progression, and modular game logic.",
+        tech: [
+            { icon: <SiTypescript />, name: "TypeScript", colour: "#3178C6", background: "#d2e1f7" },
         ]
     },
 ];
