@@ -5,7 +5,7 @@ import WealthWise from '../assets/example3.png';
 import Conversely from '../assets/example4.png';
 import { FaReact } from "react-icons/fa";
 import { SiJavascript, SiPython, SiTypescript, SiSvelte, SiFlask } from "react-icons/si";
-import styles from './about.module.css';
+import styles from './project.module.css';
 
 // data projects expects
 interface ProjectData {

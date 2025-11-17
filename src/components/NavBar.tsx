@@ -7,15 +7,15 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   // scroll to nav items
-  const scrollToSection = (id: string) => {
-  setIsMenuOpen(false);
-  const section = document.getElementById(id);
-  if (section) {
-    const yOffset = -80;
-    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
-};
+    const scrollToSection = (id: string) => {
+    setIsMenuOpen(false);
+    const section = document.getElementById(id);
+    if (section) {
+      const yOffset = -80;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
 
 
   return (
