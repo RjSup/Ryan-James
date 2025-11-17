@@ -28,7 +28,6 @@ Thumbs.db
 .vscode/
 .history/
 
-# GitHub Pages branch (if you want to avoid committing build)
 gh-pages/
 
 # Optional caches
