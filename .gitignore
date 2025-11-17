@@ -34,3 +34,5 @@ gh-pages/
 # Optional caches
 .cache/
 .pnp.*
+
+/test-results
