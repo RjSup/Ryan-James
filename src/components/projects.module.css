@@ -13,6 +13,11 @@
     background-color: rgba(245, 245, 245, 1);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: filter 300ms;
+}
+
+.projects-container:hover {
+    filter: drop-shadow(0 0 1rem rgba(119, 158, 203, 1));
 }
 
 .left-section {

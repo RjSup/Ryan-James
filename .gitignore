@@ -4,6 +4,10 @@ node_modules/
 # Build output
 build/
 dist/
+.idea
+*.idea
+.idea/
+
 
 # Dependency directories
 jspm_packages/
